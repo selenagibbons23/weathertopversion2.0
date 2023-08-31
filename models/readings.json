@@ -1,0 +1,117 @@
+{
+  "file": "./models/readings.json",
+  "readings": [
+    {
+      "code": 300,
+      "temp": 300,
+      "windSpeed": 300,
+      "windDirection": 300,
+      "pressure": 300,
+      "_id": "c8e0130c-8b84-4653-8070-82d613f45795",
+      "stationid": "2ca95f5a-1cd0-4cb1-943f-9b62cc27a75f"
+    },
+    {
+      "code": 300,
+      "temp": 300,
+      "windSpeed": 600,
+      "windDirection": 600,
+      "pressure": 600,
+      "_id": "d4699f2c-1a45-4fa0-a364-b4e4f255a80f",
+      "stationid": "e3c5cbe5-7767-4dad-ae52-0b22c1e40a13"
+    },
+    {
+      "code": 800,
+      "temp": 30,
+      "windSpeed": 5,
+      "windDirection": 5,
+      "pressure": 5,
+      "_id": "2d0417b5-56ff-4c06-b29a-de40c3015921",
+      "stationid": "e3c5cbe5-7767-4dad-ae52-0b22c1e40a13"
+    },
+    {
+      "code": 100,
+      "temp": 2,
+      "windSpeed": 20,
+      "windDirection": 30,
+      "pressure": 300,
+      "fahrenheit": 35.6,
+      "beaufort": 4,
+      "windChill": -2.72,
+      "_id": "ab7203d1-abe1-4830-8f0b-e81b254a5b82",
+      "stationid": "e3c5cbe5-7767-4dad-ae52-0b22c1e40a13"
+    },
+    {
+      "code": 100,
+      "temp": 3,
+      "windSpeed": 20,
+      "windDirection": 30,
+      "pressure": 300,
+      "fahrenheit": 37.4,
+      "beaufort": 4,
+      "windChill": -1.46,
+      "_id": "7b5cf4a1-0c79-48e7-9414-38aa4a8f0633",
+      "stationid": "e3c5cbe5-7767-4dad-ae52-0b22c1e40a13"
+    },
+    {
+      "code": 200,
+      "temp": 7,
+      "windSpeed": 20,
+      "windDirection": 200,
+      "pressure": 20,
+      "fahrenheit": 44.6,
+      "beaufort": 4,
+      "windChill": 3.59,
+      "_id": "4f807cc1-39e0-4124-8f12-c9bbaa90d5f0",
+      "stationid": "e3c5cbe5-7767-4dad-ae52-0b22c1e40a13"
+    },
+    {
+      "code": 100,
+      "temp": 2,
+      "windSpeed": 100,
+      "windDirection": 100,
+      "pressure": 100,
+      "fahrenheit": 35.6,
+      "beaufort": 10,
+      "windChill": -7.74,
+      "_id": "8f7f80eb-785e-4c51-a9b4-c4ba3ca8d6ba",
+      "stationid": "98708b9a-d272-43a7-8c0f-043035888140"
+    },
+    {
+      "code": 100,
+      "temp": 2,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 30,
+      "fahrenheit": 35.6,
+      "beaufort": 4,
+      "windChill": -2.72,
+      "_id": "97896b14-9754-4c4e-a141-0ad9558b6c28",
+      "stationid": "98708b9a-d272-43a7-8c0f-043035888140"
+    },
+    {
+      "code": 100,
+      "temp": 20,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 20,
+      "fahrenheit": 68,
+      "beaufort": 4,
+      "windChill": 19.99,
+      "_id": "8136504e-2e5b-441a-bbe4-b7d62169d98c",
+      "stationid": "98708b9a-d272-43a7-8c0f-043035888140"
+    },
+    {
+      "code": 200,
+      "temp": 4,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 20,
+      "fahrenheit": 39.2,
+      "beaufortScale": 4,
+      "windChill": "-0.19",
+      "windCompass": "North North East",
+      "_id": "cebd75be-2fac-4fda-8908-004c6bc29c5e",
+      "stationid": "4fa3d49a-46e5-4e11-b4cb-60f650f2dcf0"
+    }
+  ]
+}

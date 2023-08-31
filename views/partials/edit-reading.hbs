@@ -1,0 +1,23 @@
+<form class="box" action="/station/{{station._id}}/updatereading/{{reading._id}}" method="POST">
+  <label>Reading Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="000" name="code" value="{{reading.code}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="00.0C" name="temp" value="{{reading.temp}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="00.00kMh" name="windSpeed" value="{{reading.windSpeed}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="00deg" name="WindDirection" value="{{reading.windDirection}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="000hpa" name="Pressure" value="{{reading.pressure}}">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Reading</button>
+</form>
