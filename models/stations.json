@@ -1,0 +1,16 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "userid": "5fd990ee-0ec5-4189-abfc-d7f76d40c9f2",
+      "_id": "bade9e67-2031-4689-9367-ee3cd9b61d57"
+    },
+    {
+      "name": "DUBLIN",
+      "latitude": "150.0",
+      "longitude": "160.0",
+      "userid": "39ded558-c20e-4a14-9a6a-9ed37f069f89",
+      "_id": "4fa3d49a-46e5-4e11-b4cb-60f650f2dcf0"
+    }
+  ]
+}
