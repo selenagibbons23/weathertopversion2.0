@@ -15,21 +15,18 @@
 
     <div class="column is-one-fifth">
       <box class="box">
+        <i class="icon">{{>icons/weather}}</i
         <label class="label">Weather</label>
-        <span class="icon is-large">
-          <i class="fa-solid fas fa-2x fa-cloud-sun"></i>
-        </span>
-        <p>{{latestReading.code}}{{code}}</p>
+        <p>{{latestReading.code}}</p>
+        <p>{{codeConversion}}
+       </p>
       </box>
     </div>
 
     <div class="column is-one-fifth">
-
       <box class="box">
         <label class="label">Temperature</label>
-        <span class="icon is-large">
-          <i class="fa-solid fas fa-2x fa-temperature-three-quarters"></i>
-        </span>
+        <i class="icon">{{>icons/temp}}</i>
         <p>{{latestReading.temp}} °C</p>
         <p>{{latestReading.fahrenheit}}°F</p>
       </box>
@@ -38,8 +35,7 @@
     <div class="column is-one-fifth">
       <box class="box">
         <label class="label">Wind</label>
-        <span class="icon is-large">
-          <i class="fa-solid fas fa-2x fa-wind"></i>
+          <i class="icon">{{>icons/wind}}</i>
         </span>
         <p>{{latestReading.windSpeed}}</p>
         <p>{{beafourt}}{{latestReading.beaufortScale}} Bft</p>
@@ -51,9 +47,7 @@
     <div class="column is-one-fifth">
       <box class="box">
         <label class="label">Pressure</label>
-        <span class="icon is-large">
-          <i class="fa-solid fas fa-2x fa-water"></i>
-        </span>
+        <i class="icon">{{>icons/pressure}}</i>
         <p>{{latestReading.pressure}}</p>
       </box>
     </div>

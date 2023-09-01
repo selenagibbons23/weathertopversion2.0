@@ -19,6 +19,7 @@ export const stationAnalytics = {
       reading.windSpeed = stationReadings[latestReading].windSpeed;
       reading.windDirection = stationReadings[latestReading].windDirection;
       reading.pressure = stationReadings[latestReading].pressure;
+      reading.code = conversions.codeConversion(reading.code),
       reading.fahrenheit = conversions.tempConversion(reading.temp),
       reading.beaufortScale = conversions.beaufortScaleConversion(reading.windSpeed),
       reading.windChill = stationAnalytics.getWindChill(reading.temp, reading.windSpeed),
@@ -40,6 +41,37 @@ export const stationAnalytics = {
     return latestReading;
   },
 
+  
+  
+  
+  
+  getLatestCode(station) {
+    let latestCode = null;
+    if (station.readings.length > 0) {
+      for (let i = station.readings.length; i <= station.readings.length; i++) {
+        {
+          latestCode = station.readings[i - 1].code;
+        }
+      }
+    }
+    return latestCode;
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   getLatestTemp(station) {
     let latestTemp = null;
     if (station.readings.length > 0) {
@@ -84,4 +116,26 @@ export const stationAnalytics = {
       ) / 100.0;
     return windChill.toFixed(2);
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
 };

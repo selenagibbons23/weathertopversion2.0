@@ -26,6 +26,32 @@ export const accountsController = {
     };
     response.render("signup-view", viewData);
   },
+  
+  
+  
+  async profile(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
+      const viewData = {
+        title: "Edit User Profile",
+        user: loggedInUser,
+      };
+      
+      response.render("profile-view", viewData);
+    },
+  
+  async profileUpdate(request, response){
+      const loggedInUser = await accountsController.getLoggedInUser(request);
+        const userId = await userStore.getUserById(loggedInUser._id);
+        const newUser = {
+          firstName: request.body.firstName,
+          lastName: request.body.lastName,
+           email: request.body.email,
+          password: request.body.password
+        };
+        
+    await userStore.update(userId._id, newUser);
+        response.redirect("/profile");
+      },
 
   async register(request, response) {
     const user = request.body;

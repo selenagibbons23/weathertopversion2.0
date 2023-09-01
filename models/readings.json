@@ -112,6 +112,58 @@
       "windCompass": "North North East",
       "_id": "cebd75be-2fac-4fda-8908-004c6bc29c5e",
       "stationid": "4fa3d49a-46e5-4e11-b4cb-60f650f2dcf0"
+    },
+    {
+      "code": 700,
+      "temp": 4,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 20,
+      "fahrenheit": 39.2,
+      "beaufortScale": 4,
+      "windChill": "-0.19",
+      "windCompass": "North North East",
+      "_id": "0fcd9e81-298c-44d7-b0a0-ff4efe6e4865",
+      "stationid": "64d2c931-6c2a-4376-a92d-d465122369d9"
+    },
+    {
+      "code": 300,
+      "temp": 4,
+      "windSpeed": 10,
+      "windDirection": 40,
+      "pressure": 300,
+      "fahrenheit": 39.2,
+      "beaufortScale": 2,
+      "windChill": "1.46",
+      "windCompass": "East North East",
+      "_id": "9b096247-a0ad-46da-89a9-7e263aa08f46",
+      "stationid": "64d2c931-6c2a-4376-a92d-d465122369d9"
+    },
+    {
+      "code": 700,
+      "temp": 4,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 20,
+      "fahrenheit": 39.2,
+      "beaufortScale": 4,
+      "windChill": "-0.19",
+      "windCompass": "North North East",
+      "_id": "32ae1f6c-28bb-49d2-806f-68e9b2655242",
+      "stationid": "64d2c931-6c2a-4376-a92d-d465122369d9"
+    },
+    {
+      "code": 500,
+      "temp": 4,
+      "windSpeed": 30,
+      "windDirection": 50,
+      "pressure": 200,
+      "fahrenheit": 39.2,
+      "beaufortScale": 5,
+      "windChill": "-1.25",
+      "windCompass": "East North East",
+      "_id": "199674b3-6991-44ee-af0e-71598fcbc988",
+      "stationid": "64d2c931-6c2a-4376-a92d-d465122369d9"
     }
   ]
 }
