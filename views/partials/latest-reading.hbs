@@ -29,6 +29,8 @@
         <i class="icon">{{>icons/temp}}</i>
         <p>{{latestReading.temp}} °C</p>
         <p>{{latestReading.fahrenheit}}°F</p>
+        <p>Min:{{minTemp}}</p>
+        <p>Max:{{maxTemp}}</p>
       </box>
     </div>
 
@@ -40,7 +42,9 @@
         <p>{{latestReading.windSpeed}}</p>
         <p>{{beafourt}}{{latestReading.beaufortScale}} Bft</p>
         <p>{{windCompass}}{{latestReading.windCompass}}</p>
-        <p>Feels like {{windChill}}{{latestReading.windChill}}</p>
+        <p>Feels like {{windChill}} {{latestReading.windChill}}</p>
+        <p>Min:{{minWind}}</p>
+        <p>Max:{{maxWind}}</p>
       </box>
     </div>
 
@@ -49,6 +53,8 @@
         <label class="label">Pressure</label>
         <i class="icon">{{>icons/pressure}}</i>
         <p>{{latestReading.pressure}}</p>
+         <p>Min:{{minPressure}}</p>
+          <p>Max:{{maxPressure}}</p>
       </box>
     </div>
 

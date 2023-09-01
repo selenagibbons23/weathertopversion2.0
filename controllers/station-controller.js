@@ -13,16 +13,15 @@ export const stationController = {
    const latestTemp = stationAnalytics.getLatestTemp(station);
    const latestWindSpeed = stationAnalytics.getLatestWindSpeed(station);
     const latestWindDirection = stationAnalytics.getLatestWindDirection(station);
+    const minTemp = await stationAnalytics.minTemp(station);
+    const maxTemp = await stationAnalytics.maxTemp(station)
+    const minWind = await stationAnalytics.minWind(station);
+    const maxWind = await stationAnalytics.maxWind(station);
+    const minPressure = await stationAnalytics.minPressure(station);
+    const maxPressure = await stationAnalytics.maxPressure(station);
     
     
-    
-    
-    
-    
-    
-    
-    
-    const viewData = {
+     const viewData = {
       station: "Station",
       station: station,
       latestReading: latestReading,
@@ -30,6 +29,12 @@ export const stationController = {
      beaufortScale: conversions.beaufortScaleConversion(request.body.windSpeed),
       windChill: stationAnalytics.getWindChill(request.body.temp,request.body.windSpeed),
       windCompass: conversions.degreesToCompass(request.body.windDirection),
+      minTemp: minTemp,
+      maxTemp: maxTemp,
+      minWind: minWind,
+      maxWind: maxWind,
+      minPressure: minPressure,
+      maxPressure: maxPressure,
     };
 
     //let viewDataString = JSON.stringify(viewData); // Debug Remove Later
