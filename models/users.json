@@ -14,6 +14,13 @@
       "email": "john@gibbons.com",
       "password": "green",
       "_id": "5fd990ee-0ec5-4189-abfc-d7f76d40c9f2"
+    },
+    {
+      "firstName": "lola",
+      "lastName": "gibbons",
+      "email": "lola@gibbons.com",
+      "password": "blue",
+      "_id": "7866c8c6-2abe-4af9-a660-83b8e95745c2"
     }
   ]
 }

@@ -8,7 +8,7 @@ export const dashboardController = {
     const stations = await stationStore.getStationsByUserId(loggedInUser._id);
 
   //  
-    //const latestReading = await stationAnalytics.getLatestReading(station);
+//    const latestReading = await stationAnalytics.getLatestReading(station);
 
   for (const station of stations) {
       const latestReading = await stationAnalytics.getLatestReadingForStation(station);
@@ -22,7 +22,7 @@ export const dashboardController = {
 
 
      //sort list of stations in alphabetical order
-    // const sortedList = stations.sort((a, b) => a.name.localeCompare(b.name));
+    const sortedList = stations.sort((a, b) => a.name.localeCompare(b.name));
 
 
     

@@ -11,6 +11,27 @@
       "longitude": "160.0",
       "userid": "39ded558-c20e-4a14-9a6a-9ed37f069f89",
       "_id": "4fa3d49a-46e5-4e11-b4cb-60f650f2dcf0"
+    },
+    {
+      "name": "LETTERKENNY",
+      "latitude": "130.0",
+      "longitude": "130.0",
+      "userid": "39ded558-c20e-4a14-9a6a-9ed37f069f89",
+      "_id": "7100102e-1e42-4276-a574-a7808035371e"
+    },
+    {
+      "name": "ARANMORE",
+      "latitude": "130.0",
+      "longitude": "130.0",
+      "userid": "39ded558-c20e-4a14-9a6a-9ed37f069f89",
+      "_id": "64d2c931-6c2a-4376-a92d-d465122369d9"
+    },
+    {
+      "name": "DUBLIN",
+      "latitude": "52.126",
+      "longitude": "52.126",
+      "userid": "7866c8c6-2abe-4af9-a660-83b8e95745c2",
+      "_id": "f75c7b4e-b333-4631-97f4-0b917b7e8dea"
     }
   ]
 }
