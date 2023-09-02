@@ -3,7 +3,9 @@ import { conversions } from "../utils/conversions.js";
 
 export const stationAnalytics = {
   async getLatestReadingForStation(station) {
-    let stationReadings = await readingStore.getReadingsByStationId(station._id);
+    let stationReadings = await readingStore.getReadingsByStationId(
+      station._id
+    );
     let latestReading = null;
     const reading = {
       code: null,
@@ -19,15 +21,21 @@ export const stationAnalytics = {
       reading.windSpeed = stationReadings[latestReading].windSpeed;
       reading.windDirection = stationReadings[latestReading].windDirection;
       reading.pressure = stationReadings[latestReading].pressure;
-      reading.code = conversions.codeConversion(reading.code),
-      reading.fahrenheit = conversions.tempConversion(reading.temp),
-      reading.beaufortScale = conversions.beaufortScaleConversion(reading.windSpeed),
-      reading.windChill = stationAnalytics.getWindChill(reading.temp, reading.windSpeed),
-      reading.windCompass = conversions.degreesToCompass(reading.windDirection)
-    };
+      (reading.code = conversions.codeConversion(reading.code)),
+        (reading.fahrenheit = conversions.tempConversion(reading.temp)),
+        (reading.beaufortScale = conversions.beaufortScaleConversion(
+          reading.windSpeed
+        )),
+        (reading.windChill = stationAnalytics.getWindChill(
+          reading.temp,
+          reading.windSpeed
+        )),
+        (reading.windCompass = conversions.degreesToCompass(
+          reading.windDirection
+        ));
+    }
 
     return reading;
-    
   },
   getLatestReading(station) {
     let latestReading = null;
@@ -41,10 +49,6 @@ export const stationAnalytics = {
     return latestReading;
   },
 
-  
-  
-  
-  
   getLatestCode(station) {
     let latestCode = null;
     if (station.readings.length > 0) {
@@ -56,22 +60,7 @@ export const stationAnalytics = {
     }
     return latestCode;
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   getLatestTemp(station) {
     let latestTemp = null;
     if (station.readings.length > 0) {
@@ -112,15 +101,15 @@ export const stationAnalytics = {
     console.log(`Calculating Wind Chill for ${temp} and ${windspeed}`);
     const windChill =
       Math.round(
-        (13.12 + 0.6215 * temp - 11.37 * Math.pow(windspeed, 0.16) + 0.3965 * temp * Math.pow(windspeed, 0.16)) * 100.0
+        (13.12 +
+          0.6215 * temp -
+          11.37 * Math.pow(windspeed, 0.16) +
+          0.3965 * temp * Math.pow(windspeed, 0.16)) *
+          100.0
       ) / 100.0;
     return windChill.toFixed(2);
   },
-  
-  
-  
-  
-  
+
   minTemp(station) {
     let minTemp = null;
     if (station.readings.length != 0) {
@@ -198,20 +187,4 @@ export const stationAnalytics = {
       return maxPressure.pressure;
     } else return 0;
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
 };
