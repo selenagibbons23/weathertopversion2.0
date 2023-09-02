@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
-import {conversions } from "../utils/conversions.js";
+import { conversions } from "../utils/conversions.js";
 
 const db = initStore("readings");
 
@@ -41,7 +41,7 @@ export const readingStore = {
     await db.write();
   },
 
- async updateReading(readingId, updatedReading) {
+  async updateReading(readingId, updatedReading) {
     const reading = await this.getReadingById(readingId);
     reading.code = updatedReading.code;
     reading.temp = updatedReading.temp;
@@ -49,10 +49,9 @@ export const readingStore = {
     reading.windDirection = updatedReading.windDirection;
     reading.pressure = updatedReading.pressure;
     reading.fahrenheit = updatedReading.fahrenheit;
-    reading.beaufortScale=updatedReading.beaufortScale;
-    reading.windDirectionCalculation=updatedReading.WindDirectionCalculation;
-    
+    reading.beaufortScale = updatedReading.beaufortScale;
+    reading.windDirectionCalculation = updatedReading.WindDirectionCalculation;
+
     await db.write();
   },
-  
 };
